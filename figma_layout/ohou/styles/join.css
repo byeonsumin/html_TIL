@@ -1,0 +1,157 @@
+#wrap .sns {
+    text-align: center;
+    margin: 14px 0 0 ;
+}
+#wrap .sns a {}
+#wrap .sns a:nth-child(2) {margin: 0 20px;} /* 두번째 카카오톡 */
+#wrap .sns a img {}
+#wrap #join_frm {}
+
+/* ------------------------------------------------------- 가입정보 */
+#wrap #join_frm .contents {
+}
+#wrap #join_frm .contents .info {
+
+}
+#wrap #join_frm .contents .info dt {
+    font-size: 1.063rem;
+    margin: 22px 0 10px;
+    font-size: 1.063rem;
+    font-weight: 500;
+}
+#wrap #join_frm .contents .info dt:first-child {
+    margin-top: 0;
+}
+#wrap #join_frm .contents .info dd {
+    clear: both;
+    overflow: hidden; /* float를 해서 부모높이가 없어져서 높이가 0이 되었다 -> 그래서 hidden 작업 */
+}
+#wrap #join_frm .contents .info dt+dd {margin: 0 0 10px;}
+#wrap #join_frm .contents .info dd input[id^=user] {/* 공통 */
+    height: 39px;
+    padding-left: 10px;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #DDDDDD;;
+    border-radius: 3px;
+} 
+#wrap #join_frm .contents .info dd #user_mail {
+    width: 190px;
+    float: left;
+}
+#wrap #join_frm .contents .info dd span {
+    float: left;
+    margin-left: 7px;
+    transform: translateY(13px);
+    color: #777777;
+    font-weight: 500;
+}
+#wrap #join_frm .contents .info dd select[name*=adr] {
+    height: 39px;
+    padding-left: 10px;
+    background: #fff url(../images/arrow_drop_down.png) no-repeat 96% center;
+    width: 190px;
+    border: 1px solid #DDDDDD;;
+    border-radius: 3px;
+    float: right;
+}
+#wrap #join_frm .contents .info dd select[nam*=adr] option {
+    
+}
+#wrap #join_frm .contents .info dd #email_certified_btn {
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    background: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    font-weight: 600;
+    color: #777777;
+}
+#wrap #join_frm .contents .info dd #user_pw {
+
+}
+#wrap #join_frm .contents .info dd #user_pw_re {
+
+}
+#wrap #join_frm .contents .info dd #user_nick {
+    
+}
+
+/* ------------------------------------------------------- 가입약관 */
+#wrap #join_frm .law {
+    margin: 22px 0 0;
+}    
+#wrap #join_frm .law dl {
+    
+}
+#wrap #join_frm .law dl dt {
+    font-size: 1.063rem;
+    font-weight: 500;
+    margin: 0 0 10px;
+}
+#wrap #join_frm .law dl dd {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+#wrap #join_frm .law dl dd ul {
+
+}
+#wrap #join_frm .law dl dd ul li {
+    padding: 10px 0;
+}
+#wrap #join_frm .law dl dd ul li:nth-child(even) {}
+/* ------------------------------------------------------- 전체동의 1행 */
+#wrap #join_frm .law dl dd ul li:first-child {
+    border-bottom: 1px solid #ddd;  
+}
+#wrap #join_frm .law dl dd ul li:first-child #all {}
+#wrap #join_frm .law dl dd ul li:first-child label {
+    font-weight: 600;
+}
+#wrap #join_frm .law dl dd ul li:first-child label em {
+    font-size: 0.875rem;
+}
+/* ----------------------------------------------- 개별동의 2~6행 통합 */
+#wrap #join_frm .law dl dd ul li input[name*=agree] {
+    display: none;
+}
+#wrap #join_frm .law dl dd ul li input[name*=agree]:checked + label {
+    background-image: url(../images/check_box_y.png);
+}
+#wrap #join_frm .law dl dd ul li label {
+    background-image: url(../images/check_box_n.png);
+    background-repeat: no-repeat;
+    padding-left: 34px;
+    line-height: 24px; /* 이미지 크기가 커서 조금 잘린다. 그래서 이미지 크기(24px) 그대로 height를 24px 적용 */
+    display: inline-block
+}
+#wrap #join_frm .law dl dd ul li label em {
+    
+}
+#wrap #join_frm .law dl dd ul li label .essential {
+    columns: #3292FF;
+    font-size: 0.813rem;
+    
+}
+#wrap #join_frm .law dl dd ul li label .choice {
+    color: #777;
+    font-size: 0.75rem;
+}
+#wrap #join_frm .law dl dd ul li .more { /* > 모양 */
+    float: right;
+}
+#wrap #join_frm .law dl dd ul li .more img {}
+
+/* ------------------------------------------------------- 가입버튼 */
+#wrap #join_frm #join_btn {
+    background:#3292FF;
+    margin: 22px 0;
+}
+#wrap #join_frm #join_frm > p {
+    text-align: center;
+    font-size: 0.875rem;
+}
+#wrap #join_frm #join_frm > p a {
+    text-decoration: underline;
+    font-weight: 600;
+}
