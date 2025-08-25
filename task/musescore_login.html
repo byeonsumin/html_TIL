@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <title>Login | Mussescore</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/X-icon">
+    <!-- 웹글꼴 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Reset -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/musescore_login.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 안내글귀 -->
+        <div>
+            <h1>Log in to Mussescore</h1>
+            <span>Don't have an account?</span>
+            <a href="#" class="sign_up_btn">Sign Up</a>
+        </div>
+        <!-- 로그인 -->
+        <div class="sns_login">
+            <a href="#" class="google-btn"><img src="./images/google-login.png"
+                alt="Google로 로그인">Continue with Google</a>
+            <a href="#" class="fb-btn"><img src="./images/fb-login.png"
+                alt="페이스북으로 로그인"></a>
+            <a href="#" class="apple-btn"><img src="./images/apple-login.png"
+                alt="애플로 로그인"></a>
+            <!-- 선 -->
+             <div class="line">
+                <p>or</p>
+             </div>
+        </div>
+        <div class="mail_login">
+            <label>Email or username</label>
+            <input type="text" name="user_mail" id="user_mail">
+        </div>
+        <div class="pw_login">
+            <label>Password</label>
+            <a href="#">Forgot your password?</a>
+            <input type="text" name="user_pw" id="user_pw">
+        </div>
+        <button type="submit" id="login_btn">Login</button>
+    </div>
+</body>
+</html>

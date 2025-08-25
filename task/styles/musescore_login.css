@@ -1,0 +1,137 @@
+#wrap {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 35px;
+    text-align: center;
+    padding: 24px;
+}
+#wrap h1 {
+    font-weight: 900;
+    text-align: center;
+    color: #1E004D;
+    font-size: 1.75rem;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+#wrap span {
+    display: inline-block;
+    color: #797979;
+    margin-bottom: 28px;
+    font-size: 0.75rem;
+}
+
+#wrap a.sign_up_btn{
+    font-weight: 500;
+    color: #6b5dfe;
+    font-size: 0.75rem;
+}
+
+#wrap .sns_login {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E7E5EA;
+    margin-right: 7px;
+}
+
+#wrap .sns_login a.google-btn {
+    color: #fff;
+    background-color: #6B5DFE;
+    font-size: 0.75rem;
+    width: 170px;
+    height: 35px;
+    border-radius: 20px;
+    display: inline-block;
+}
+#wrap .sns_login a.google-btn img {
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+    margin: 5px 5px 4.5px -9px;
+}
+
+#wrap .sns_login a.fb-btn img, #wrap .sns_login a.apple-btn img {
+    width: 26px;
+    height: 26px;
+    margin: 4.5px 7px 4.5px 7px;
+    vertical-align:middle
+}
+#wrap .sns_login a:nth-child(2), #wrap .sns_login a:nth-child(3) {
+    width: 43px;
+    height: 35px;
+    border: 1px solid #C5C5C5;
+    border-radius: 20px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+#wrap .sns_login .line {
+    position: relative;
+    text-align: center;
+    margin: 30px 0;
+}
+
+#wrap .sns_login .line p {
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+    line-height: 1;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#wrap .mail_login {}
+#wrap .mail_login label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color:#1E004D;
+    display: block;
+    text-align: left;
+    margin-bottom: 7px;
+    margin-top: 20px;
+}
+#wrap .mail_login #user_mail {
+    width: 272px;
+    height: 40px;
+    border: 1px solid #ddd;
+    font-size: 0.875rem;
+    margin: 7px 0 15px 0;
+    padding: 12px 16px;
+}
+#wrap .pw_login {}
+
+#wrap .pw_login label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color:#1E004D;
+    float: left;
+    margin-bottom: 7px;
+}
+#wrap .pw_login a {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #6B5DFE;
+    float: right;
+}
+#wrap .pw_login #user_pw {
+    width: 272px;
+    height: 40px;
+    border: 1px solid #ddd;
+    margin: 7px 0 15px 0;
+    padding: 12px 16px;
+}
+
+#wrap #login_btn {
+    background-color: #E7E5E8;
+    width: 272px;
+    height: 40px;
+    font-size: 0.75rem;
+    color: #A4A4A4;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+#wrap #login_btn:hover {
+    background: #6B5DFE;
+    color: #fff;
+}
