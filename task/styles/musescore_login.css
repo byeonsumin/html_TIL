@@ -1,0 +1,196 @@
+#wrap {
+    background: bisque  ;
+    text-align: center;
+    width: 320px;
+    margin: 0 auto;
+    padding: 150px
+}
+/* 헤더 스타일 */
+#wrap h1 {
+    font-weight: 700;
+    text-align: center;
+    color: #1E004D;
+    font-size: 2rem;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+#wrap span {
+    display: block;
+    text-align: center;
+    color: #777;
+    margin-bottom: 24px;
+}
+
+
+
+
+
+/* 회원가입 텍스트 */
+#wrap a {
+    font-size: 0.75rem;
+    color: #797979;
+    display: inline-block;
+}
+#wrap a em {}
+
+
+
+/* SNS 로그인 영역 */
+#wrap .sns_login {
+    background-color :aquamarine;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 35px;
+    border-bottom: 10px solid E7E5EA;
+    display: inline-block;
+
+
+}
+
+/* 구글 버튼 (텍스트 포함) */
+#wrap .sns .google-btn {
+    background: #6B5DFE;
+    
+    border-radius: 20px;
+    width: 170px;
+    height: 35px;
+    color: #fff;
+    font-size: 0.75rem;
+    text-align: left;
+    display: inline-block;
+
+
+}
+#wrap .sns .google-btn img {
+    margin:4.5px 139px 4.5px 5px;
+}
+
+
+/* 페북/애플 버튼 (로고만) */
+#wrap .sns .fb-btn {
+    width: 40px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #E7E5EA;
+    display: inline-block;
+    padding-top: 4.5px;
+
+
+}
+
+#wrap .sns .fb-btn img {
+    background-color: chartreuse;
+    width: 26px;
+    height:26px;
+
+}
+
+
+#wrap .sns .apple-btn {
+    width: 43px;
+    height: 35px;
+
+
+}
+#wrap .sns .apple-btn img {
+    background-color: blueviolet;
+    border: 1px solid #E7E5EA;
+    border-radius: 20px;
+    padding: 5px 6px;
+    margin-right:4px;
+}
+
+
+#wrap .sns_login p {} 
+
+#wrap #id.pw {} 
+#wrap #id.pw dl {} 
+#wrap #id.pw dl dt {} 
+#wrap #id.pw dl dd {} 
+#wrap #id.pw dl dd #user_id {} 
+#wrap #id.pw dl dt a {} 
+#wrap #id.pw dl dt dd {} 
+#wrap #id.pw dl dt dd #user_pw.id {} 
+#wrap #id.pw #login_btn {} 
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+#wrap .sns span {
+    background-color:#fff;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    margin-left: 125px;
+    
+}
+
+
+
+#wrap .sns p {
+    background-color: #fff;
+
+}
+
+
+
+#wrap dl {}
+
+
+
+
+#wrap dl dt {
+    font-size: 0.75rem;
+    width: 100%;
+    color: #1E004D;
+    text-align: left;
+    margin-bottom: 7px;
+    background-color: yellow;
+    display: inline-block;
+
+}
+
+#wrap dl dd {}
+
+#wrap dl dd #user_email_or_name_id {
+    border: 1px solid #A2A2A2;
+    width:100%;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+#wrap dl dd #user_pw.id_pw {
+    border: 1px solid #A2A2A2;
+    width:100%;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+
+#wrap p.forget_pw {
+    border: 5px solid pink;
+    width: 100%;
+    font-size: 0.75rem;
+    color: #6B5DFE;
+    
+}
+
+#wrap p.forget_pw a.forget_pw {}
+
+
+
+#wrap #btn {
+    background-color :#6B5DFE;
+    border-radius: 20px;
+    width: 100%;
+    height: 35px;
+    color: #fff;
+    font-size: 0.75rem;
+    display: inline-block;
+
+}

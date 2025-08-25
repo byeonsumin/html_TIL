@@ -8,11 +8,8 @@
 #wrap #join_frm {}
 
 /* ------------------------------------------------------- 가입정보 */
-#wrap #join_frm .contents {
-}
-#wrap #join_frm .contents .info {
-
-}
+#wrap #join_frm .contents {}
+#wrap #join_frm .contents .info {}
 #wrap #join_frm .contents .info dt {
     font-size: 1.063rem;
     margin: 22px 0 10px;
@@ -55,9 +52,7 @@
     border-radius: 3px;
     float: right;
 }
-#wrap #join_frm .contents .info dd select[nam*=adr] option {
-    
-}
+#wrap #join_frm .contents .info dd select[nam*=adr] option {}
 #wrap #join_frm .contents .info dd #email_certified_btn {
     padding: 10px 0;
     text-align: center;
@@ -67,23 +62,15 @@
     font-weight: 600;
     color: #777777;
 }
-#wrap #join_frm .contents .info dd #user_pw {
-
-}
-#wrap #join_frm .contents .info dd #user_pw_re {
-
-}
-#wrap #join_frm .contents .info dd #user_nick {
-    
-}
+#wrap #join_frm .contents .info dd #user_pw {}
+#wrap #join_frm .contents .info dd #user_pw_re {}
+#wrap #join_frm .contents .info dd #user_nick {}
 
 /* ------------------------------------------------------- 가입약관 */
 #wrap #join_frm .law {
     margin: 22px 0 0;
 }    
-#wrap #join_frm .law dl {
-    
-}
+#wrap #join_frm .law dl {}
 #wrap #join_frm .law dl dt {
     font-size: 1.063rem;
     font-weight: 500;
@@ -125,13 +112,10 @@
     line-height: 24px; /* 이미지 크기가 커서 조금 잘린다. 그래서 이미지 크기(24px) 그대로 height를 24px 적용 */
     display: inline-block
 }
-#wrap #join_frm .law dl dd ul li label em {
-    
-}
+#wrap #join_frm .law dl dd ul li label em {}
 #wrap #join_frm .law dl dd ul li label .essential {
     columns: #3292FF;
     font-size: 0.813rem;
-    
 }
 #wrap #join_frm .law dl dd ul li label .choice {
     color: #777;
