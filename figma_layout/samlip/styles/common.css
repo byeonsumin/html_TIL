@@ -16,6 +16,7 @@
 
     /* 굵기 */    
     --weight-bold:700;
+    --weight-semibold:600;
 
     /* 색상(테두리색, 배경색, 글자색 등) */    
     --color-white:#fff;
@@ -71,7 +72,7 @@
 }
 
 #wrap header nav .gnb > li .lnb {
-    background: coral;
+    background: rgba(255, 255, 255, 0.7);
     /* 교차시키기(absolute) + 중첩순서(z-index) */
     position:absolute;
     z-index: 90; /* 0 ~ 999 */
@@ -79,13 +80,12 @@
     left: 0; /* absolute + 좌표가 있다면? 부모(pst) 기준 좌표 설정 뜻 */
     top:92px;
 
-
-    display: flex;
-    flex-flow: column nowrap;
 }
 
 #wrap header nav .gnb > li .lnb li {}
-#wrap header nav .gnb > li .lnb li a {}
+#wrap header nav .gnb > li .lnb li a {
+    font-size: var(--text-menu18);font-weight: var(--weight-semibold);
+}
 
 
 
