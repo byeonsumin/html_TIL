@@ -69,8 +69,13 @@
     background: yellow;
     display: block;
     line-height: 92px;
-}
 
+}
+/* 메인메뉴에 마우스 올렸을 때 서브메뉴 보이기(공용) */
+#wrap header nav .gnb > li:hover .lnb {
+    display: flex; 
+}
+/* 서브메뉴 시작 */
 #wrap header nav .gnb > li .lnb {
     background: rgba(255, 255, 255, 0.7);
     /* 교차시키기(absolute) + 중첩순서(z-index) */
@@ -79,7 +84,12 @@
     width: 100%; /* absolute와 함께 w100%가 있으면 부모(position)의 너비와 같다는 뜻 */
     left: 0; /* absolute + 좌표가 있다면? 부모(pst) 기준 좌표 설정 뜻 */
     top:92px;
-
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 80px;
+    padding: 45px 0;
+    display: none; /* 초기 숨기기 */
 }
 
 #wrap header nav .gnb > li .lnb li {}
