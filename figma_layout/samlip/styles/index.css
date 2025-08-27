@@ -14,7 +14,7 @@
     height: 709px; width: 1920px;
     /* padding: 449px 0 0 80px; */
     position: relative;
-} /* 공통 */
+} /* 공통 */    
 #wrap main .visual_wrap  .visual_bnr_wrap section h2 {
     font-size: var(--text-title70);
     font-weight: var(--weight-bold);
