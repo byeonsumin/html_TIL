@@ -1,14 +1,60 @@
 /* index 파일에만 존재하는 디자인 */
 
 /* 고정 페이지 위치 */
-#wrap main .main_pst_ink {}
-#wrap main .main_pst_ink a {}
-#wrap main .main_pst_ink a .name {}
-#wrap main .main_pst_ink a .circle {}
+#wrap main .main_pst_link {
+    position: fixed;
+    z-index: 80;
+    right: 59px;
+    top: 286px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:flex-end;
+    gap: 20px;
 
+}
+#wrap main .main_pst_link a {
+    text-align: right;
+    font-size: 0.625rem;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+#wrap main .main_pst_link a span {}
+#wrap main .main_pst_link a .name {
+    font-size: var(----text-sub10);
+    display: none;
+}
+#wrap main .main_pst_link a .circle {
+    background: var(--color-white);
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* box-shadow:x값 y값 blur값 색상; */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+/* 첫번째 circle 활성화 디자인 */
+#wrap main .main_pst_link a:first-child .circle{
+    background: var(--color-point);
+}
 
+/* 마우스 올릴 시 활성화 디자인 */
+#wrap main .main_pst_link a .circle:hover {
+    background: black;
+}
+/* 1. 글자숨기기 */
+/* 2. circle에 마우스 올리면(a) */
+#wrap main .main_pst_link a:hover .circle {
+    background: black
+}
+#wrap main .main_pst_link a:hover .name {
+    display: inline-block;
+}
 
-/* index 파일에만 존재하는 디자인 */
+/* 2-1. circle 검은색 변경 */
+/* 2-2. 글자 보이기 */
+
+/* -------------------------------------------- 1행 시작 */
 #wrap main .visual_wrap {
     width: 100vw; overflow: hidden;
 }/* 새롭게 만든 부모한테 overflow 주기 */
@@ -35,15 +81,15 @@
 } /* 공통 */
 #wrap main .visual_wrap  .visual_bnr_wrap  section p {
     font-size: var(--text-contents21);
-    color: var(--color-white);
+    color: var(--color-grey4);
     line-height: var(--line-contents);
     letter-spacing: var(--letter-min2);
     position: absolute; left: 80px; bottom: 30px;
-} /* 공통 */
+} 
 
 /* First banner */
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr1 {
-    background-image: url(../images/row_bnr1.jpg);
+    background-image: url(../images/bnr1.jpg);
 }
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr1 h2 {
     color: var(--color-white);
@@ -53,24 +99,20 @@
 }
 /* Second banner */
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr2 {
-    background-image: url(../images/row_bnr2.jpg);
+    background-image: url(../images/bnr2.jpg);
 }
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr2 h2 {
     color: var(--color-title_brown);
 }
-#wrap main .visual_wrap  .visual_bnr_wrap  .bnr2 p {
-    color: var(--color-gray4);
-}
+#wrap main .visual_wrap  .visual_bnr_wrap  .bnr2 p {}
 /* Third banner */
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr3 {
-    background-image: url(../images/row_bnr3.jpg);
+    background-image: url(../images/bnr3.jpg);
 }
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr3 h2 {
     color: var(--color-title_indigo);
 }
-#wrap main .visual_wrap  .visual_bnr_wrap  .bnr3 p {
-    color: var(--color-gray4);
-}
+#wrap main .visual_wrap  .visual_bnr_wrap  .bnr3 p {}
 /* Fourth banner */
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr4 {
     background-image: url(../images/bnr4.jpg)
@@ -79,9 +121,100 @@
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr4 h2 {
     color: var(--color-title_coral);
 }
-#wrap main .visual_wrap  .visual_bnr_wrap  .bnr4 p {
-    color: var(--color-gray4);
+#wrap main .visual_wrap  .visual_bnr_wrap  .bnr4 p {}
+/* -------------------------------------------- 1행&2행 좌우 버튼 */
+#wrap main .visual_wrap .prev_next_wrap,
+#wrap main .news_notice_wrap .prev_next_wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 38px;
+    gap: 24px;
 }
-/* ------------------------ 1행&2행 좌우 버튼 */
-#wrap 
-/* ------------------------ 2행 시작 */
+#wrap main .visual_wrap .prev_next_wrap a,
+#wrap main .news_notice_wrap .prev_next_wrap a {}
+#wrap main .visual_wrap .prev_next_wrap a img,
+#wrap main .news_notice_wrap .prev_next_wrap a img {}
+#wrap main .visual_wrap .prev_next_wrap .next img,
+#wrap main .news_notice_wrap .prev_next_wrap .next img {
+    transform: scaleX(-1);
+}
+#wrap main .visual_wrap .prev_next_wrap .prev,
+#wrap main .news_notice_wrap .prev_next_wrap .prev {}
+
+
+/* -------------------------------------------- 2행 시작 */
+#wrap main .news_notice_wrap {
+    padding-top: 50px;
+    /* text-align:center; */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+#wrap main .news_notice_wrap > *:nth-child(even) {
+
+}
+#wrap main .news_notice_wrap h2 {
+    font-size: var(--text-title40);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--letter-min2);
+
+}
+#wrap main .news_notice_wrap h2+p {
+    line-height: var(--line-contents);
+    letter-spacing: var(--letter-min2);
+    margin: 20px 0 80px;
+    
+}
+#wrap main .news_notice_wrap .card_wrap {
+    width: var(--width-desktop);
+    overflow: hidden;
+}
+#wrap main .news_notice_wrap .card_wrap .card_all {
+    display: flex;
+    flex-flow: row nowrap;
+    width: max-content;
+    gap: 65.33px;
+    
+}
+#wrap main .news_notice_wrap .card_wrap .card_all li {
+    width: 311px;
+    height: 298px;
+    border: 1px solid var(--color-grayd);
+    position: relative; 
+    background: var(--color-white);
+}
+#wrap main .news_notice_wrap .card_wrap .card_all li:hover {
+    border-color: var(--color-point);
+}
+#wrap main .news_notice_wrap .card_wrap .card_all li a {}
+#wrap main .news_notice_wrap .card_wrap .card_all li a .photo {}
+#wrap main .news_notice_wrap .card_wrap .card_all li a .photo img {width: 100%;}
+#wrap main .news_notice_wrap .card_wrap .card_all li a h3 {
+    padding: 20px 20px 0;
+    font-size: var(--text-menu18);
+    line-height: var(--line-contents);
+}
+#wrap main .news_notice_wrap .card_wrap .card_all li .date {
+    position: absolute;
+    left: 20px;
+    bottom: 9px;
+}
+#wrap main .news_notice_wrap .view_all_btn {
+    width: 200px;
+    font-size: var(--text-sub14);
+    border: 1px solid var(--color-grayd);
+    /* text-align: center;
+    line-height: 48px */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0;
+    gap: 10px;
+    padding: 13.5px;
+}
+#wrap main .news_notice_wrap .view_all_btn img {}
+#wrap main .news_notice_wrap .view_all_btn span {
+    font-size: var(--text-sub14);
+}

@@ -3,25 +3,12 @@
     /* --대상-용도:반복속성값; */
     /* 글자 크기 */
     --text-title70:4.375rem; /* 70px */
+    --text-title40:2.5rem; /* 40px */
     --text-contents21:1.313rem;
-<<<<<<< Updated upstream
     --text-menu18:1.125rem;
+    --text-sub14:0.875rem;
     --text-sub12:0.75rem;
-
-    /* 행간 */
-    --line-title:90%; /* (90% = 0.9) */
-    --line-contents:150%;
-    
-    /* 자간 */
-    --letter-minus2:-0.02rem; /* (0.02rem) */
-
-    /* 굵기 */
-    --weight-bold:700;
-    --weight-semibold:600;
-
-=======
-    --text-gnb18:1.125rem;
-    --text-rgt_menu12:0.75rem;
+    --text-sub10:0.625rem;
     /* 행간 */
     --line-title:90%;
     --line-contents:150%;
@@ -30,39 +17,24 @@
     /* 굵기 */
     --weight-bold:700;
     --weight-semibold:600;
->>>>>>> Stashed changes
     /* 색상 (border, background, color 등 될 수 있는 후보! */
     --color-white:#fff;
-    --color-title_brown:#642c10;
-<<<<<<< Updated upstream
-    --color-title_indigo:#1d356d;
-    --color-title_coral:#d43936;
-
-=======
-    --color-title_drkblue:#1d356d;
-    --color-title_drkred:#d43936;
     --color-grey4:#444;
     --color-greya:#AAA;
->>>>>>> Stashed changes
+    --color-grayd:#ddd;
+    --color-title_brown:#642c10;
+    --color-title_indigo:#1d356d;
+    --color-title_coral:#d43936;
+    --color-point:#36b4e5;
     /* 레이아웃 정보 */
     --width-desktop:1440px;
     --margin-desktop-l-r-80: 80px;
 }
+body,html {scroll-behavior: smooth;} /* 스크롤 내릴때 부드럽게 내려가는거 */
 /* header 포함 공통 */
-body {} /* ??? */
-#wrap {}
-<<<<<<< Updated upstream
-/* ------------------------로고 */
-#wrap header {
-    width: 100%; /* 블록의 기본값이라 생략가능 */
-    padding: 10px 80px;
-    height: 92px;
-    display: flex;
-    flex-flow: row nowrap; /* 메인축(수평) 줄바꿈 안함 */
-    justify-content: space-between; /* 메인축 정렬(양쪽끝) */
-    align-items: center; /* 교차축(수직) 가운데  */
-    position: relative; /* lnb 크기 + 위치 부모 기준 */
-=======
+#wrap {
+    padding-top: 92px;
+}
 #wrap header {
     /* width: 100%; 블록의 기본값이라 안 써도 돼!*/ 
     padding: 0 80px;
@@ -71,23 +43,15 @@ body {} /* ??? */
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* lnb 크기 & 위치 부모 기준 */
->>>>>>> Stashed changes
+    position: fixed; /* lnb 크기 & 위치 부모 기준 */
+    z-index: 900; left: 0; top:0; /* 헤더 위치 그대로 좌표 입력하기 */
+    width: 100%; /* fixed or absolute 너비값을 재설정 해야한다 */
+    background: var(--color-white);
 }
 #wrap header h1 {}
 #wrap header h1 a {}
 #wrap header h1 a img {}
-<<<<<<< Updated upstream
-/* ------------------------ gnb */
-#wrap header nav {}
-#wrap header nav .gnb {
-    display: flex; /* 자식 li 정렬 위한 값 */
-    /* figma gap 70 */
-    flex-flow: row nowrap;
-    gap: 70px;
-}
 
-=======
 #wrap header nav {}
 #wrap header nav .gnb {
     display: flex;
@@ -96,7 +60,6 @@ body {} /* ??? */
     gap: 70px;
     
 }
->>>>>>> Stashed changes
 #wrap header nav .gnb > li {}
 #wrap header nav .gnb > li > a {
     font-size: var(--text-menu18);
@@ -110,33 +73,12 @@ body {} /* ??? */
 #wrap header nav .gnb > li .lnb {
     background: rgba(255, 255, 255, 0.7);
     /* 교차시키기 (absolute) + 중첩순서 (z-index) */
-<<<<<<< Updated upstream
-    position: absolute;
-    z-index: 90; /* 0 ~ 999 */
-    width: 100%; /* absolute와 함께 w100%가 있으면 부모(position)의 너비와 같다는 뜻 */
-=======
     position: absolute; z-index: 90;
     width: 100%; /* absolute와 함께 w100%가 있으면 position이 설정된 부모의 너비와 같다는 뜻 */
->>>>>>> Stashed changes
     left: 0; /* absolute + 좌표가 있다면? position이 설정된 부모 기준 좌표 설정 뜻 */
     top: 92px;
     display: flex;
     flex-flow: row nowrap;
-<<<<<<< Updated upstream
-    justify-content: center;
-    gap: 80px;
-    padding: 45px 0;
-    display: none;
-    /* display: none; / 초기 숨기기 */
-}
-#wrap header nav .gnb > li .lnb > li { /* / li : a와 depth2 말하는 것 */
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    gap: 15px;
-}
-
-=======
     justify-content: center; gap: 80px; padding: 45px 0;
     display: none;
 }
@@ -152,90 +94,26 @@ body {} /* ??? */
     flex-flow: column nowrap;
     align-items: center; gap: 15px;
 }
->>>>>>> Stashed changes
 #wrap header nav .gnb > li .lnb > li > a {
     font-size: var(--text-menu18);
     font-weight: var(--weight-semibold);
     /* line-height: 80px; */
-<<<<<<< Updated upstream
 }
-/* IR sub-menu */
-#wrap header nav .gnb > li .lnb > li .lnb_depth2 {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center; gap: 15px;
-}
-/* ------------------------ right menu */
-
-#wrap header .right_menu {
-    display: flex; /* 자식 li 정렬 위한 값 */
-    flex-flow: row nowrap;
-    align-items: center;
-}
-#wrap header .right_menu > li {}
-
-#wrap header .right_menu > li:first-child {
-=======
-}
-
-
-
-
 #wrap header .rgt_menu {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-
-
 }
-#wrap header .rgt_menu > li {
-}
+#wrap header .rgt_menu > li {}
 #wrap header .rgt_menu > li:first-child::after {
     content: ''; display: block;
     width: 1px; height: 13px; background: var(--color-greya);
     margin: 0 40px;
 }
 #wrap header .rgt_menu > li:first-child {
->>>>>>> Stashed changes
     display: flex; /* customer와 구분선의 부모 */
     flex-flow: row nowrap;
 }
-
-<<<<<<< Updated upstream
-#wrap header .right_menu > li:last-child {}
-
-
-#wrap header .right_menu > li:first-child::after {
-    content: ''; display: block;
-    width: 1px; height: 13px;
-    background: var(--color-graya);
-    margin: 0 40px;
-}
-
-#wrap header .right_menu > li > a {
-    font-size: var(--text-sub12);
-}
-
-#wrap header .right_menu > li > a img {
-
-}
-
-#wrap header .right_menu > li:nth-child(2) {margin-right:40px;}
-/* 언어 선택 시 활성화 디자인 */
-#wrap header .right_menu li:nth-child(2) {
-    position: relative;
-}
-/* 두번째 li에 마우스를 올렸을 때 자식 언어선택 보이기 */
-#wrap header .right_menu li:nth-child(2):hover .lang_select {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 10px;
-}
-#wrap header .right_menu li:nth-child(2) .lang_select {
-    /* 형제 또는 부모와 겹치는 디자인 요소는 -> 무조건 absolute 필수 */
-    position: absolute;
-    z-index: 100;/* 0 ~ 999 */
-=======
 #wrap header .rgt_menu > li > a {
     font-size: var(--text-sub12);
 }
@@ -246,7 +124,6 @@ body {} /* ??? */
     position: relative;
 }
 #wrap header .rgt_menu li:nth-child(2):hover .lang_select {
->>>>>>> Stashed changes
     display: flex;
 }
 #wrap header .rgt_menu li:nth-child(2) .lang_select {
@@ -256,20 +133,6 @@ body {} /* ??? */
     flex-flow: column nowrap; gap: 10px;
     display: none;
 }
-<<<<<<< Updated upstream
-#wrap header .right_menu li:nth-child(2) .lang_select a {
-    width: 40px;
-    line-height: 40px; /* 수직 중앙으로 */
-    border-radius: 50%;
-    text-align: center;
-    border: 1px solid var(--color-graya);
-    font-size: var(--text-sub12);
-    background-color: var(--color-white);
-}
-#wrap header .right_menu li:nth-child(2) .lang_select a.kr {}
-#wrap header .right_menu li:nth-child(2) .lang_select a.en {}
-#wrap header .right_menu li:nth-child(2) .lang_select a.cn {}
-=======
 #wrap header .rgt_menu li:nth-child(2) .lang_select a {
     width: 40px; line-height: 40px;
     font-size: var(--text-sub12);
@@ -280,6 +143,5 @@ body {} /* ??? */
 #wrap header .rgt_menu li:nth-child(2) .lang_select a.kr {}
 #wrap header .rgt_menu li:nth-child(2) .lang_select a.en {}
 #wrap header .rgt_menu li:nth-child(2) .lang_select a.cn {}
->>>>>>> Stashed changes
 /* 메인 */
 #wrap main {}
