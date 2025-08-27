@@ -43,7 +43,7 @@
 
 /* First banner */
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr1 {
-    background-image: url(../images/bnr1.jpg);
+    background-image: url(../images/row_bnr1.jpg);
 }
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr1 h2 {
     color: var(--color-white);
@@ -53,7 +53,7 @@
 }
 /* Second banner */
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr2 {
-    background-image: url(../images/bnr2.jpg);
+    background-image: url(../images/row_bnr2.jpg);
 }
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr2 h2 {
     color: var(--color-title_brown);
@@ -63,7 +63,7 @@
 }
 /* Third banner */
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr3 {
-    background-image: url(../images/bnr3.jpg);
+    background-image: url(../images/row_bnr3.jpg);
 }
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr3 h2 {
     color: var(--color-title_indigo);
@@ -74,6 +74,7 @@
 /* Fourth banner */
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr4 {
     background-image: url(../images/bnr4.jpg)
+
 }
 #wrap main .visual_wrap  .visual_bnr_wrap  .bnr4 h2 {
     color: var(--color-title_coral);
