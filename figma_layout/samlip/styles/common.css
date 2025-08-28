@@ -4,6 +4,7 @@
     /* 글자 크기 */
     --text-title70:4.375rem; /* 70px */
     --text-title40:2.5rem; /* 40px */
+    --text-title31:1.938rem; /* 31px */
     --text-contents21:1.313rem;
     --text-menu18:1.125rem;
     --text-sub14:0.875rem;
@@ -17,17 +18,23 @@
     /* 굵기 */
     --weight-bold:700;
     --weight-semibold:600;
+    --weight-medium:500;
+
     /* 색상 (border, background, color 등 될 수 있는 후보! */
     --color-white:#fff;
     --color-grey4:#444;
     --color-greya:#AAA;
     --color-grayd:#ddd;
+    --color-grayc:#F1F1F1;
+    --color-grayd:#FCFCFC;
     --color-title_brown:#642c10;
     --color-title_indigo:#1d356d;
     --color-title_coral:#d43936;
     --color-point:#36b4e5;
+    --color-point_y:#f3c300;
     /* 레이아웃 정보 */
     --width-desktop:1440px;
+    --width-desktop-1140:1140px;
     --margin-desktop-l-r-80: 80px;
 }
 body,html {scroll-behavior: smooth;} /* 스크롤 내릴때 부드럽게 내려가는거 */
