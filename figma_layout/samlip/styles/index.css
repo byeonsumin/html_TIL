@@ -10,7 +10,6 @@
     flex-flow: column nowrap;
     align-items:flex-end;
     gap: 20px;
-
 }
 #wrap main .main_pst_link a {
     text-align: right;
@@ -81,7 +80,7 @@
 } /* 공통 */
 #wrap main .visual_wrap  .visual_bnr_wrap  section p {
     font-size: var(--text-contents21);
-    color: var(--color-grey4);
+    color: var(--color-gray4);
     line-height: var(--line-contents);
     letter-spacing: var(--letter-min2);
     position: absolute; left: 80px; bottom: 30px;

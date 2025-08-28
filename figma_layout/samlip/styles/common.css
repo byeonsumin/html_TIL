@@ -22,8 +22,8 @@
 
     /* 색상 (border, background, color 등 될 수 있는 후보! */
     --color-white:#fff;
-    --color-grey4:#444;
-    --color-greya:#AAA;
+    --color-gray4:#444;
+    --color-graya:#AAA;
     --color-grayd:#ddd;
     --color-grayc:#F1F1F1;
     --color-grayd:#FCFCFC;
@@ -114,7 +114,7 @@ body,html {scroll-behavior: smooth;} /* 스크롤 내릴때 부드럽게 내려�
 #wrap header .rgt_menu > li {}
 #wrap header .rgt_menu > li:first-child::after {
     content: ''; display: block;
-    width: 1px; height: 13px; background: var(--color-greya);
+    width: 1px; height: 13px; background: var(--color-graya);
     margin: 0 40px;
 }
 #wrap header .rgt_menu > li:first-child {
@@ -144,11 +144,88 @@ body,html {scroll-behavior: smooth;} /* 스크롤 내릴때 부드럽게 내려�
     width: 40px; line-height: 40px;
     font-size: var(--text-sub12);
     background-color: var(--color-white);
-    border-radius: 50%; border: 1px solid var(--color-greya);
+    border-radius: 50%; border: 1px solid var(--color-graya);
     text-align: center;
 }
 #wrap header .rgt_menu li:nth-child(2) .lang_select a.kr {}
 #wrap header .rgt_menu li:nth-child(2) .lang_select a.en {}
 #wrap header .rgt_menu li:nth-child(2) .lang_select a.cn {}
-/* 메인 */
+/* ---------------------------------------------------------------------- 메인 */
 #wrap main {}
+/* ---------------------------------------------------------------------- 푸터 */
+#wrap footer {padding: 50px 80px;}
+#wrap footer *:nth-child(odd) {
+    font-size: var(--text-sub14) ;
+
+}
+#wrap footer *:nth-child(even) {
+    font-size: var(--text-sub14) ;
+}
+#wrap footer .ft_top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#wrap footer .ft_top .menu {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 20px;
+}
+#wrap footer .ft_top .menu a {}
+#wrap footer .ft_top .menu a:first-child {color: var(--color-point);}
+#wrap footer .ft_top .menu a:nth-child(2) {color: var(--color-title_coral);}
+#wrap footer .ft_top .menu a img {
+    width: 75px;
+    height: 60px;
+}
+#wrap footer .ft_top .site_all {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 20px;
+}
+#wrap footer .ft_top .site_all li {
+    position: relative;
+}
+#wrap footer .ft_top .site_all li p {
+    background-color: var(--color-white);
+    background-image: url(../images/arrow_down.png);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    line-height: 40px;
+    padding-left: 10px;
+    border: 1px solid var(--color-graya);
+}
+#wrap footer .ft_top .site_all li:nth-child(1) p {width: 220px;}
+#wrap footer .ft_top .site_all li:nth-child(2) p {width: 140px;}
+#wrap footer .ft_top .site_all li .family_list {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray4);
+    position: absolute;
+    width: 100%; /* absolute의 부모relative의 너비만큼 차지하라 */
+    bottom: 40px; /* 안겹치게 */
+    height: 250px;
+    overflow: auto;    
+    display: none;
+    
+}
+/* 패밀리 사이트에 마우스 올릴 시 패밀리 리스트(서브) 보이기 */
+#wrap footer .ft_top .site_all li:nth-child(1):hover .family_list { /* 마우스 올릴때 보임 */
+    display: block;
+}
+#wrap footer .ft_top .site_all li .family_list li {
+    padding: 10px;
+}
+#wrap footer .ft_top .site_all li .family_list li a {}
+#wrap footer .ft_top .site_all li .sitemap_wrap {display: none;} /* 초기 숨기기 */
+#wrap footer .ft_top .site_all li .sitemap_wrap .sitemap_contents {}
+#wrap footer .ft_top .site_all li .sitemap_wrap .sitemap_contents h2 {}
+#wrap footer .ft_top .site_all li .sitemap_wrap .sitemap_contents .close {}
+#wrap footer .ft_btn {}
+#wrap footer .ft_btn address {
+    padding: 25px 0;
+    line-height: var(--line-contents);
+}
+#wrap footer .ft_btn p {}
