@@ -1,0 +1,114 @@
+#wrap {}
+#wrap header {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 25);
+}
+#wrap header .header_contents {
+    max-width: 1200px; /* 최대 너비값이 1200 */
+    height: 64px;
+    margin: 0 auto; /* 여백을 준게 아니라 너비를 주고 가운데 정렬! */
+    background:yellow;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#wrap header .header_contents h1 {}
+#wrap header .header_contents h1 a {}
+#wrap header .header_contents > nav {}
+#wrap header .header_contents > nav a {margin-left: 20px;}
+#wrap header .header_contents > nav a:hover {font-weight: 700;}
+#wrap header .header_contents .m_nav {display: none;}
+#wrap header .header_contents .m_nav > a {}
+#wrap header .header_contents .m_nav > nav {}
+#wrap header .header_contents .m_nav > nav a {}
+/* -------------------------------------main */
+#wrap main {}
+/* -------------------------------------main 1행 광고 */
+#wrap main #slide_wrap {
+    max-width: 1200px;
+    overflow: hidden ;
+    margin: 0 auto;
+    position: relative; /* 기준 */
+}
+#wrap main #slide_wrap .slide_container {
+    display: flex;
+    width: max-content;
+}
+#wrap main #slide_wrap .slide_container .slide {
+    max-width: 1200px; /* 가변형 시, max처리 */
+    width: 1200px; /* 하나당 1200px */
+    height: 650px;
+    background-size: cover; /* cover = 화면을 빈틈없이 채운다 */
+    background-position: center;
+}
+#wrap main #slide_wrap .slide_container .slide1 {
+    background-image: url(https://plus.unsplash.com/premium_photo-1707353400196-06cc5a377467?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQxfHxjYXR8ZW58MHx8MHx8fDA%3D);
+}
+#wrap main #slide_wrap .slide_container .slide2 {
+    background-image: url(https://images.unsplash.com/photo-1472491235688-bdc81a63246e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2F0fGVufDB8fDB8fHww);
+}
+#wrap main #slide_wrap .slide_container .slide3 {
+    background-image: url(https://plus.unsplash.com/premium_photo-1707353401897-da9ba223f807?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNhdHxlbnwwfHwwfHx8MA%3D%3D);
+}
+#wrap main #slide_wrap .slide_container .slide4 {
+    background-image: url(https://media.istockphoto.com/id/2164485563/ko/%EC%82%AC%EC%A7%84/%EC%97%AC%EC%9E%90-%EC%86%90%EC%97%90-%EA%B7%80%EC%97%AC%EC%9A%B4-%EC%83%9D%EA%B0%95-%EA%B3%A0%EC%96%91%EC%9D%B4-%ED%91%B9%EC%8B%A0%ED%91%B9%EC%8B%A0%ED%95%9C-%EC%95%A0%EC%99%84-%EB%8F%99%EB%AC%BC%EC%9D%B4-%ED%8E%B8%EC%95%88%ED%95%98%EA%B2%8C-%EC%A0%95%EC%B0%A9%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4-%EC%95%84%EB%8A%91%ED%95%9C-%EC%A7%91-%EB%B3%B5%EC%82%AC-%EA%B3%B5%EA%B0%84.webp?a=1&b=1&s=612x612&w=0&k=20&c=y6pCfDwprG96Y25571xaFL1LaLbgl2bbl9DP1nCMyKY=);
+}
+#wrap main #slide_wrap .slide_container .slide5 {
+    background-image: url(https://plus.unsplash.com/premium_photo-1707353402256-3afa1e567b54?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGNhdHxlbnwwfHwwfHx8MA%3D%3D);
+}
+#wrap main #slide_wrap .slide_container .slide6 {
+    background-image: url(https://plus.unsplash.com/premium_photo-1707353402057-c95bdddb5b39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGNhdHxlbnwwfHwwfHx8MA%3D%3D);
+}
+#wrap main #slide_wrap .slide_container .active {} /* 사진 전체부분 */
+#wrap main #slide_wrap .prev {left: 0;} /* 이전 표시가 왼쪽으로 가기 */
+#wrap main #slide_wrap .next {right: 0;} /* 다음 표시가 오른쪽으로 가기 */
+#wrap main #slide_wrap .prev, #wrap main #slide_wrap .next {/* 공통 */
+    position: absolute; /* flex가 안되는 이유? */ /* 다른요소와 겹쳐져 있어서 absolute */
+    top: 45%; /* 전체 100%(고양이 사진) 기준으로 50%, 반 정도의 위치까지 와라 */
+} 
+#wrap main #slide_wrap .pagenation {
+    background: aqua;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+#wrap main #slide_wrap .pagenation span {}
+#wrap main #slide_wrap .pagenation span.active {}
+/* ----------------------------------------------2행 소개 */
+#wrap main .info {
+    background: pink;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 270px; /* 고정 높이 */
+}
+#wrap main .info a {
+    width: 100px;
+    height: 100px;
+    line-height: 100px; /* 글자 위쪽에서 가운데로 정렬하기 (height와 같은 높이로 지정) */
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+}
+#wrap main .info a:hover {
+    width: 170px;
+    height: 170px;
+    line-height: 170px; /* 글자 위쪽에서 가운데로 정렬하기 (height와 같은 높이로 지정) */
+}
+/* ----------------------------------------------3행 입양문의 */
+#wrap main .inquiry {}
+#wrap main .inquiry h2 {}
+#wrap main .inquiry #adoption_frm {}
+#wrap main .inquiry #adoption_frm input[type=text] {}
+#wrap main .inquiry #adoption_frm input[type=number] {}
+#wrap main .inquiry #adoption_frm textarea#content {
+    background: #eee;
+    width: 100%;
+}
+#wrap main .inquiry #adoption_frm textarea#content {}
+#wrap main .inquiry #adoption_frm #inquiry_btn {}

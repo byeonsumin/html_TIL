@@ -34,12 +34,10 @@
 }
 #wrap main .bg {
     background: var(--color-grayd);
-
     padding: 50px;
 }
 #wrap main .bg > *:nth-child(odd) {
     text-align: center;
-
 
 }
 #wrap main .bg > p {
@@ -50,7 +48,6 @@
 }
 #wrap main .bg > p:nth-child(2) {
     margin: 25px 0;
-
 
 }
 #wrap main .bg > h2 {

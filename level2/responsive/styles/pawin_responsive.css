@@ -1,0 +1,48 @@
+/* 태블릿 */
+@media screen and (max-width:1199px) {/* 768~1199 */
+    #wrap header .header_contents {/* absolute의 부모를 relative적용 */
+        padding: 0 20px;
+        position: relative;
+    }
+    #wrap main #slide_wrap {margin: 0 20px;}
+    #wrap main .info a:nth-last-child(1),
+    #wrap main .info a:nth-last-child(2) {display: none;}
+}
+/* 모바일 */
+@media screen and (max-width:767px) {/* 320~767 */
+    #wrap header .header_contents > nav {display: none;} /* 모바일 화면 nav 숨기기 */
+    #wrap header .header_contents .m_nav {display: block;} /* 원래 가지던 특징(div = block) 지정 */
+    #wrap header .header_contents .m_nav > nav {
+        z-index: 500; /* 모바일 전체메뉴 리스트가 위로 올라오게 배치 */
+        background: lightgray;
+        position: absolute; /* 메뉴 겹쳐짐 + 오른쪽으로 배치 = absolute */
+        top: 64px; /* absolute 적용 후 좌표 설정 */
+        right: 0; /* absolute 적용 후 좌표 설정 */
+        width: 226px;
+        /* height: 100vh; */
+        /* height: calc(값 연산자 값) - 공백주의 */ 
+        /* 서로 다른 단위를 계산할 때 사용하는 함수 calc() */
+        /* height:calc((100vh - 64px) / 3); */
+        height: calc(100vh - 64px); /* 계산기 부르는 함수 = calc * / vh를 적용했는데, 세로 스크롤이 나온다면 calc를 적용하여 계산 */
+        display: flex;
+        flex-flow: column nowrap; /* 메뉴 밑으로 배치 */
+        gap: 20px; /* 메뉴 밑으로 여백(gap) 주기 */
+        align-items: center;
+        padding-top: 30px;
+    }
+    #wrap main #slide_wrap {
+        margin: 0;
+        height: 268px;
+    }
+    #wrap main .info {height: 130px;}
+    #wrap main .info a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    #wrap main .info a:hover {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+}
