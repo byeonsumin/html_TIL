@@ -21,8 +21,10 @@
         main {height:150vh; }
         main #visual {background:#26bad7; min-width:1200px; margin:0 auto; height:550px; position:relative;}
         main #visual #deco {position:relative; width:1200px; margin:0 auto;}
-        main #visual #deco .obj {position:absolute;}
-
+        main #visual #deco .obj {
+            position:absolute;
+            animation: rotate 2s linear alternate infinite; /* ---------실습---------- */
+        }
         main #visual #deco .obj1 {
             top:170px; left:50%; margin-left:-342px;
         }
@@ -37,6 +39,7 @@
         }
         main #visual #deco .obj5 {
             right:0; top:150px;
+            animation: rotate 2s linear alternate-reverse infinite; /* ---------실습---------- */
         }
         main #visual #deco .obj6 {
             right:200px; top:250px;
@@ -46,11 +49,12 @@
         }
         main #visual #deco .obj8 {
             left:270px; top:440px;
+            animation: rotate 2s linear alternate-reverse infinite; /* ---------실습---------- */
         }
         main #visual #deco .obj9 {
             right:0; top:440px;
+            
         }
-
         main #book_center {
             position:absolute; 
             left:50%; bottom:-50px; margin-left:-181px;
@@ -69,7 +73,14 @@
         main .category a.active {background:#26bad7; color:#fff;}
 
         /* 애니메이션 */
-
+        @keyframes rotate { /* ---------실습---------- */
+            0% {transform: rotate(0)}
+            100% {transform: rotate(20deg)}
+        }
+        @keyframes scale { /* ---------실습---------- */
+            0% {transform: scale(1)}
+            100% {transform: scale(1.2)}
+        }
     </style>
 </head>
 <body>

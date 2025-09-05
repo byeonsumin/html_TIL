@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform 공부</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        main {background: pink; max-width: 1000px; margin: 100px auto;}
+        main .coffee {width: 200px; display: block; border: 1px solid red;} /* 부모의 사이즈는 100%가 아니고 px로 지정 */
+        main .coffee img {width: 100%;} /* 이미지 사이즈는 부모를 따라가기 때문에 100%로 지정 */
+        main .c1{transition: transform 0.3s;} /* ---------실습---------- */
+        main .c1:hover{ /* ---------실습---------- */
+            /* transform:속성(값) 속성(값); */
+            transform: scale(0.8); /* 120% 비율 */
+        }
+        main .c2{ /* ---------실습---------- */
+            transition: transform 0.2s;
+            transform-origin: right top; /* 기본선택자에 지정 */ 
+        }
+        main .c2:hover { /* ---------실습---------- */
+            transform: rotate(-20deg) scale(1.1); /* 양수는 시계방향, 음수는 반시계방향 */
+            
+        }
+        main .c3{transition: transform 0.5s; transform-origin: left top; /* ---------실습---------- */
+        }
+        main .c3:hover { /* ---------실습---------- */
+            transform: skewX(5deg) rotate(-10deg) scale(0.8);
+        }
+        main .c4{ /* ---------실습---------- */
+            transition: transform 0.3s;
+        }
+        main p:hover .c4{ /* ---------실습---------- */
+            transform: translate(200px, 10px) rotate(5deg) scale(1.2) skewY(10deg);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <a href="#" class="coffee c1"><img src="./coffee_images/starbucks1.png" alt=""></a>
+        <a href="#" class="coffee c2"><img src="./coffee_images/starbucks1.png" alt=""></a>
+        <a href="#" class="coffee c3"><img src="./coffee_images/starbucks1.png" alt=""></a>
+        <p><a href="#" class="coffee c4"><img src="./coffee_images/starbucks1.png" alt=""></a></p>
+    </main>
+</body>
+</html>

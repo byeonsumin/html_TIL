@@ -19,8 +19,7 @@
             position: absolute;
             right: 0px;
             bottom: 150px;
-            
-            transform: rotate(15deg);
+            transform: rotate(15deg); /* ---------실습---------- */
         }
         #v_btn {
             position:absolute; left:0; bottom:50px; width:100%;
@@ -29,14 +28,14 @@
         #v_btn a {
             width:100px; margin:0 10px; 
             display:flex; align-items:flex-end;
+            transition: transform 0.3s; /* ---------실습---------- */
+            transform-origin: right bottom; /* ---------실습---------- */
         }
+        #v_btn a:hover {transform: rotate(10deg);} /* ---------실습---------- */
         #v_btn a img {width:100%;}
     </style>
     <script>
         window.onload=function(){
-
-            
-
         }//e:onload
     </script>
 </head>
